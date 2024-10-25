@@ -13,25 +13,25 @@ export default function Menu(){
     <SafeAreaView>
       <View style={styles.container}>
         <Pressable style={styles.buttons} onPress={() => alert("Pressed")}>
-          <Text>Self-Study Quiz</Text>
+          <Text style={styles.buttonText}>Self-Study Quiz</Text>
         </Pressable>
         <Pressable style={styles.buttons} onPress={() => alert("Pressed")}>
-          <Text>Vote Calculator</Text>
+          <Text style={styles.buttonText}>Vote Calculator</Text>
         </Pressable>
         <Pressable style={styles.buttons} onPress={() => alert("Pressed")}>
-          <Text>Tellers Report</Text>
+          <Text style={styles.buttonText}>Tellers Report</Text>
         </Pressable>
         <Pressable style={styles.buttonFeedback} onPress={() => alert("Pressed")}>
-          <Text>Feedback</Text>
+          <Text style={styles.buttonText}>Feedback</Text>
         </Pressable>
         <Pressable style={styles.buttonHelp} onPress={() => alert("Pressed")}>
-          <Text>Help</Text>
+          <Text style={styles.buttonText}>Help</Text>
         </Pressable>
       </View>
       <Divider bold horizontalInset style={styles.divider}/>
       <View style={styles.container}>
           <Pressable style={styles.buttonAboutNap} onPress={() => router.push('/aboutnap')}>
-            <Text>About NAP</Text>
+            <Text style={styles.buttonText}>About NAP</Text>
           </Pressable>
         </View>
     </SafeAreaView>
@@ -52,7 +52,10 @@ const styles = StyleSheet.create({
     paddingHorizontal: 120,
     borderRadius: 20,
     marginTop:20,
-    elevation: 10,
+    elevation: 15,
+  },
+  buttonText:{
+    fontSize:17,
   },
   buttonAboutNap:{
     alignContent:'center',
@@ -63,7 +66,7 @@ const styles = StyleSheet.create({
     paddingHorizontal: 120,
     borderRadius: 20,
     marginTop:20,
-    elevation: 10,
+    elevation: 15,
   },
   buttonFeedback:{
     alignContent:'center',
@@ -74,7 +77,7 @@ const styles = StyleSheet.create({
     paddingHorizontal: 135,
     borderRadius: 20,
     marginTop:20,
-    elevation: 10,
+    elevation: 15,
   },
   buttonHelp:{
     alignContent:'center',
@@ -85,7 +88,7 @@ const styles = StyleSheet.create({
     paddingHorizontal: 150,
     borderRadius: 20,
     marginTop:20,
-    elevation: 10,
+    elevation: 15,
   },
   divider: {
     borderBottomWidth: 1,
