@@ -1,5 +1,8 @@
+import * as React from 'react';
 import { router } from "expo-router";
-import { Pressable, StyleSheet, Text, View } from "react-native";
+import { Pressable, SafeAreaView, StyleSheet, Text, View } from "react-native";
+import { Divider } from 'react-native-paper';
+
 
 
 //Menu buttons from homescreen
@@ -7,29 +10,31 @@ export default function Menu(){
   return(
     //backbutton
     //Follow the (About NAP) button for routing to another page
-    <View style={styles.container}>
-      <Pressable style={styles.buttons} onPress={() => alert("Pressed")}>
-        <Text>Self-Study Quiz</Text>
-      </Pressable>
-      <Pressable style={styles.buttons} onPress={() => alert("Pressed")}>
-        <Text>Vote Calculator</Text>
-      </Pressable>
-      <Pressable style={styles.buttons} onPress={() => alert("Pressed")}>
-        <Text>Tellers Report</Text>
-      </Pressable>
-      <Pressable style={styles.buttonFeedback} onPress={() => alert("Pressed")}>
-        <Text>Feedback</Text>
-      </Pressable>
-      <Pressable style={styles.buttonHelp} onPress={() => alert("Pressed")}>
-        <Text>Help</Text>
-      </Pressable>
-
-      <Text>_______________________________________</Text>
-
-      <Pressable style={styles.buttonAboutNap} onPress={() => router.push('/aboutnap')}>
-        <Text>About NAP</Text>
-      </Pressable>
-    </View>
+    <SafeAreaView>
+      <View style={styles.container}>
+        <Pressable style={styles.buttons} onPress={() => alert("Pressed")}>
+          <Text>Self-Study Quiz</Text>
+        </Pressable>
+        <Pressable style={styles.buttons} onPress={() => alert("Pressed")}>
+          <Text>Vote Calculator</Text>
+        </Pressable>
+        <Pressable style={styles.buttons} onPress={() => alert("Pressed")}>
+          <Text>Tellers Report</Text>
+        </Pressable>
+        <Pressable style={styles.buttonFeedback} onPress={() => alert("Pressed")}>
+          <Text>Feedback</Text>
+        </Pressable>
+        <Pressable style={styles.buttonHelp} onPress={() => alert("Pressed")}>
+          <Text>Help</Text>
+        </Pressable>
+      </View>
+      <Divider bold horizontalInset style={styles.divider}/>
+      <View style={styles.container}>
+          <Pressable style={styles.buttonAboutNap} onPress={() => router.push('/aboutnap')}>
+            <Text>About NAP</Text>
+          </Pressable>
+        </View>
+    </SafeAreaView>
   );
 };
 
