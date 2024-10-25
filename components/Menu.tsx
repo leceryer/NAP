@@ -24,7 +24,7 @@ export default function Menu(){
         <Pressable style={styles.buttonFeedback} onPress={() => alert("Pressed")}>
           <Text style={styles.buttonText}>Feedback</Text>
         </Pressable>
-        <Pressable style={styles.buttonHelp} onPress={() => alert("Pressed")}>
+        <Pressable style={styles.buttonHelp} onPress={() => router.push("/help")}>
           <Text style={styles.buttonText}>Help</Text>
         </Pressable>
       </View>
@@ -60,7 +60,7 @@ const styles = StyleSheet.create({
   buttonAboutNap:{
     alignContent:'center',
     alignItems:'center',
-    backgroundColor:'#6495ed',
+    backgroundColor:'#2986cc',
     paddingTop:35,
     paddingBottom:35,
     paddingHorizontal: 120,
