@@ -13,7 +13,7 @@ function CustomHeaderHome() {
 }
 
 // style={{flexDirection:'row', alignItems:'center', justifyContent:'center'}}
-function CustomHeaderAbout() {
+function CustomHeader() {
   return (
     <SafeAreaView style={styles.headerContainer}>
       <View>
@@ -32,7 +32,8 @@ export default function RootLayout(){
   return(
     <Stack>
       <Stack.Screen name="index" options={{header: () => <CustomHeaderHome/>}}/>
-      <Stack.Screen name="aboutnap" options={{header: () => <CustomHeaderAbout/>, headerShown:true}}/>
+      <Stack.Screen name="help" options={{header: () => <CustomHeader/>}} />
+      <Stack.Screen name="aboutnap" options={{header: () => <CustomHeader/>, headerShown:true}}/>
       <Stack.Screen name="+not-found"/>
     </Stack>
   );
@@ -40,16 +41,18 @@ export default function RootLayout(){
 
 const styles = StyleSheet.create({
   headerContainer:{
-    backgroundColor: '#6495ed',
-    padding: 20,
+    backgroundColor: '#2986cc',
+    padding: 15,
     alignContent:'center',
     alignItems:'center',
-    height:110,
+    height:100,
   },
   headertitle:{
-    color: 'black',
+    textAlign:'center',
+    color: 'white',
     fontSize: 20,
     fontWeight:'semibold',
-    paddingTop:40
+    paddingTop:20,
+    paddingHorizontal:50,
   },
 });

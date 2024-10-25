@@ -1,8 +1,6 @@
 import * as React from 'react'
 import {StyleSheet, View, SafeAreaView, ScrollView } from "react-native";
 import Menu from '@/components/Menu';
-import { Appbar } from 'react-native-paper';
-import { router } from 'expo-router';
 
 export default function Index() {
   return (
