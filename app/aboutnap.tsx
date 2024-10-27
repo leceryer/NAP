@@ -43,13 +43,13 @@ export default function aboutnapScreen(){
 
 const styles = StyleSheet.create({
     container:{
-        backgroundColor: 'white',
+        backgroundColor: '',
         alignContent:'center',
         alignItems:'center',
         padding: 15,
     },
     headerContainer:{
-      backgroundColor: 'white',
+      backgroundColor: '',
       alignContent:'center',
       alignItems:'center',
       padding: 15,
