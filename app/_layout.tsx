@@ -32,6 +32,7 @@ export default function RootLayout(){
   return(
     <Stack>
       <Stack.Screen name="index" options={{header: () => <CustomHeaderHome/>}}/>
+      <Stack.Screen name="feedback" options={{header: () => <CustomHeader/>}}/>
       <Stack.Screen name="help" options={{header: () => <CustomHeader/>}} />
       <Stack.Screen name="aboutnap" options={{header: () => <CustomHeader/>, headerShown:true}}/>
       <Stack.Screen name="+not-found"/>

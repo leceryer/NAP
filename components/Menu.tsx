@@ -21,7 +21,7 @@ export default function Menu(){
         <Pressable style={styles.buttons} onPress={() => alert("Pressed")}>
           <Text style={styles.buttonText}>Tellers Report</Text>
         </Pressable>
-        <Pressable style={styles.buttonFeedback} onPress={() => alert("Pressed")}>
+        <Pressable style={styles.buttonFeedback} onPress={() => router.push('/feedback')}>
           <Text style={styles.buttonText}>Feedback</Text>
         </Pressable>
         <Pressable style={styles.buttonHelp} onPress={() => router.push("/help")}>
