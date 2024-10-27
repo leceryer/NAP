@@ -13,8 +13,8 @@ export default function feedbackScreen(){
             <ScrollView>
                 <View style={styles.container}>
                     <View style={{flex: 1, width: '100%', marginBottom:30}}>
-                        <Text>Please leave your commenr or suggestion,</Text>
-                        <Text>To receive a reply, Incluide your email.</Text>
+                        <Text style={{fontSize: 20}}>Please leave your commenr or suggestion,</Text>
+                        <Text style={{fontSize: 20}}>To receive a reply, Include your email.</Text>
                         <TextInput style={styles.textinputEmail} mode='outlined' label={"Email"} value={email} onChangeText={text => setEmail(text)} />
                     </View>
                     <View style={{flex: 1, width:'100%'}}>
@@ -40,15 +40,12 @@ const styles = StyleSheet.create({
       fontWeight:'semibold',
       width:'100%',
       height: 60,
+      fontSize: 20,
     },
     textinputComment:{
         fontWeight:'semibold',
         width:'100%',
         height: 500,
+        fontSize: 20,
     },
-    divider: {
-        borderBottomWidth: 1,
-        borderColor: 'black',
-        marginVertical: 5,
-      },
   });
