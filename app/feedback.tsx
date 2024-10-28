@@ -36,7 +36,7 @@ export default function feedbackScreen(){
                             <Dialog visible={visible}
                             onDismiss={hideDialog}
                             dismissable>
-                                <Dialog.Content style={{alignContent:'center', alignItems: 'center'}}>
+                                <Dialog.Content style={{alignContent:'center', alignItems: 'center', height:50}}>
                                     <Text style={{fontSize:23, alignContent:'center', alignItems: 'center'}}>
                                         Feedback Sent!  <Icon source={"send-check"} color={'green'} size={23}/>
                                     </Text>

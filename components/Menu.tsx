@@ -15,10 +15,7 @@ export default function Menu(){
         <Pressable style={styles.buttons} onPress={() => alert("Pressed")}>
           <Text style={styles.buttonText}>Self-Study Quiz</Text>
         </Pressable>
-        <Pressable style={styles.buttons} onPress={() => alert("Pressed")}>
-          <Text style={styles.buttonText}>Vote Calculator</Text>
-        </Pressable>
-        <Pressable style={styles.buttons} onPress={() => alert("Pressed")}>
+        <Pressable style={styles.buttons} onPress={() => router.push('/')}>
           <Text style={styles.buttonText}>Tellers Report</Text>
         </Pressable>
         <Pressable style={styles.buttonFeedback} onPress={() => router.push('/feedback')}>
@@ -28,7 +25,7 @@ export default function Menu(){
           <Text style={styles.buttonText}>Help</Text>
         </Pressable>
       </View>
-      <Divider bold horizontalInset style={styles.divider}/>
+      <Divider horizontalInset style={styles.divider}/>
       <View style={styles.container}>
           <Pressable style={styles.buttonAboutNap} onPress={() => router.push('/aboutnap')}>
             <Text style={styles.buttonText}>About NAP</Text>
@@ -52,7 +49,7 @@ const styles = StyleSheet.create({
     paddingHorizontal: 120,
     borderRadius: 20,
     marginTop:20,
-    elevation: 15,
+    elevation: 10,
   },
   buttonText:{
     fontSize:17,
@@ -66,7 +63,7 @@ const styles = StyleSheet.create({
     paddingHorizontal: 120,
     borderRadius: 20,
     marginTop:20,
-    elevation: 15,
+    elevation: 10,
   },
   buttonFeedback:{
     alignContent:'center',
@@ -77,7 +74,7 @@ const styles = StyleSheet.create({
     paddingHorizontal: 135,
     borderRadius: 20,
     marginTop:20,
-    elevation: 15,
+    elevation: 10,
   },
   buttonHelp:{
     alignContent:'center',
@@ -88,7 +85,7 @@ const styles = StyleSheet.create({
     paddingHorizontal: 150,
     borderRadius: 20,
     marginTop:20,
-    elevation: 15,
+    elevation: 10,
   },
   divider: {
     borderBottomWidth: 1,
