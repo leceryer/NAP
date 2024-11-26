@@ -12,10 +12,10 @@ export default function Menu(){
     //Follow the (About NAP) button for routing to another page
     <SafeAreaView>
       <View style={styles.container}>
-        <Pressable style={styles.buttons} onPress={() => alert("Pressed")}>
+        <Pressable style={styles.buttons} onPress={() => alert("Coming Soon...")}>
           <Text style={styles.buttonText}>Self-Study Quiz</Text>
         </Pressable>
-        <Pressable style={styles.buttons} onPress={() => router.push('/')}>
+        <Pressable style={styles.buttons} onPress={() => router.push('/tellersreport')}>
           <Text style={styles.buttonText}>Tellers Report</Text>
         </Pressable>
         <Pressable style={styles.buttonFeedback} onPress={() => router.push('/feedback')}>
@@ -43,7 +43,7 @@ const styles = StyleSheet.create({
   buttons:{
     alignContent:'center',
     alignItems:'center',
-    backgroundColor:'#f5d9d9',
+    backgroundColor:'#e0d8ec',
     paddingTop:35,
     paddingBottom:35,
     paddingHorizontal: 120,
@@ -68,7 +68,7 @@ const styles = StyleSheet.create({
   buttonFeedback:{
     alignContent:'center',
     alignItems:'center',
-    backgroundColor:'#f5d9d9',
+    backgroundColor:'#e0d8ec',
     paddingTop:35,
     paddingBottom:35,
     paddingHorizontal: 135,
@@ -79,7 +79,7 @@ const styles = StyleSheet.create({
   buttonHelp:{
     alignContent:'center',
     alignItems:'center',
-    backgroundColor:'#f5d9d9',
+    backgroundColor:'#e0d8ec',
     paddingTop:35,
     paddingBottom:35,
     paddingHorizontal: 150,
