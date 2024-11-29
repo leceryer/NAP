@@ -15,7 +15,7 @@ function CustomHeaderHome() {
 // style={{flexDirection:'row', alignItems:'center', justifyContent:'center'}}
 function CustomHeader() {
   return (
-    <SafeAreaView style={styles.headerContainer}>
+    <SafeAreaView>
       <View>
         {/* <Text style={styles.headertitle}>
           <Icon source={"alert-circle"} color={MD3Colors.error0} size={23}/>About NAP <Icon source={"alert-circle"} color={MD3Colors.error0} size={23}/>  
@@ -42,6 +42,7 @@ export default function RootLayout(){
 };
 
 const styles = StyleSheet.create({
+  //currently unused
   headerContainer:{
     backgroundColor: '#2986cc',
     padding: 15,

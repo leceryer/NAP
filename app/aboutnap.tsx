@@ -7,8 +7,13 @@ export default function aboutnapScreen(){
     return(
         //apply back button here
         <SafeAreaView>
-                <ScrollView>
-                    <Appbar.BackAction onPress={() => router.back()} size={40}/>
+        {/* Fixed Back Button */}
+        <Appbar.BackAction
+            onPress={() => router.back()}
+            size={25}
+            style={styles.fixedBackButton}
+        />
+            <ScrollView contentContainerStyle={styles.scrollContainer}>
                     <View style={styles.container}>
                         <Text style={styles.headerContainer}><Icon source={"alert-circle"} color={MD3Colors.error0} size={23}/>  About NAP  <Icon source={"alert-circle"} color={MD3Colors.error0} size={23}/></Text>
                     </View>
@@ -67,5 +72,17 @@ const styles = StyleSheet.create({
         borderBottomWidth: 1,
         borderColor: 'black',
         marginVertical: 5,
+      },
+      fixedBackButton: {
+        position: 'absolute', // Keeps the back button fixed
+        top: 30, // Distance from the top of the screen
+        left: 10, // Distance from the left of the screen
+        zIndex: 10, // Ensures it stays on top
+        backgroundColor: '#2986cc',
+        color: 'white',
+      },
+      scrollContainer: {
+        marginTop: 70, // Adjust the scroll content to leave space for the back button
+        paddingHorizontal: 10, // Add some horizontal padding if needed
       },
   });

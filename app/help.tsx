@@ -6,8 +6,14 @@ import { Appbar } from 'react-native-paper';
 export default function helpScreen(){
     return(
         <SafeAreaView>
-            <ScrollView>
-                <Appbar.BackAction onPress={() =>router.back()} size={40} />
+            {/* Fixed Back Button */}
+            <Appbar.BackAction
+                onPress={() => router.back()}
+                size={25}
+                style={styles.fixedBackButton}
+            />
+            
+            <ScrollView contentContainerStyle={styles.scrollContainer}>
                 <View>
                     <View style={styles.container}>
                         <Text style={styles.headerContainer}>Self-Study Quiz</Text>
@@ -71,5 +77,18 @@ const styles = StyleSheet.create({
         borderBottomWidth: 1,
         borderColor: 'black',
         marginVertical: 5,
+      },
+      fixedBackButton: {
+        position: 'absolute', // Keeps the back button fixed
+        top: 30, // Distance from the top of the screen
+        left: 10, // Distance from the left of the screen
+        zIndex: 10, // Ensures it stays on top
+        backgroundColor: '#2986cc',
+        color: 'white',
+      },
+      scrollContainer: {
+        marginTop: 70, // Adjust the scroll content to leave space for the back button
+        paddingHorizontal: 10, // Add some horizontal padding if needed
+        paddingBottom: 100,
       },
   });
