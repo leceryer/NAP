@@ -12,7 +12,7 @@ function CustomHeaderHome() {
   );
 }
 
-// style={{flexDirection:'row', alignItems:'center', justifyContent:'center'}}
+//Blue background header, currently unused.
 function CustomHeader() {
   return (
     <SafeAreaView>
