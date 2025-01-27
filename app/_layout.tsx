@@ -12,10 +12,10 @@ function CustomHeaderHome() {
   );
 }
 
-// style={{flexDirection:'row', alignItems:'center', justifyContent:'center'}}
+//Blue background header, currently unused.
 function CustomHeader() {
   return (
-    <SafeAreaView style={styles.headerContainer}>
+    <SafeAreaView>
       <View>
         {/* <Text style={styles.headertitle}>
           <Icon source={"alert-circle"} color={MD3Colors.error0} size={23}/>About NAP <Icon source={"alert-circle"} color={MD3Colors.error0} size={23}/>  
@@ -32,6 +32,7 @@ export default function RootLayout(){
   return(
     <Stack>
       <Stack.Screen name="index" options={{header: () => <CustomHeaderHome/>}}/>
+      <Stack.Screen name='tellersreport' options={{header: () => <CustomHeader/>}}/>
       <Stack.Screen name="feedback" options={{header: () => <CustomHeader/>}}/>
       <Stack.Screen name="help" options={{header: () => <CustomHeader/>}} />
       <Stack.Screen name="aboutnap" options={{header: () => <CustomHeader/>, headerShown:true}}/>
@@ -41,6 +42,7 @@ export default function RootLayout(){
 };
 
 const styles = StyleSheet.create({
+  //currently unused
   headerContainer:{
     backgroundColor: '#2986cc',
     padding: 15,
